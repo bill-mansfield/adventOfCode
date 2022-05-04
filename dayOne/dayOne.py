@@ -3,10 +3,8 @@
 import dayOneInput
 
 increases = []
-for i, measurement in enumerate(dayOneInput.nums):
-	if i > 0:
-		if measurement > dayOneInput.nums[i - 1]:
-			increases.append(measurement)
 
-print(len(increases))
+for firstN, secondN in zip(dayOneInput.nums, dayOneInput.nums[1:]):
+	increases.append(secondN > firstN)
 
+print(sum(increases))
