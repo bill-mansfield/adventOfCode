@@ -1,4 +1,5 @@
-nums = [float(num) for num in """143
+nums = [int(num) for num in """
+143
 147
 150
 166
@@ -1997,5 +1998,4 @@ nums = [float(num) for num in """143
 8119
 8127
 8145
-8147
-""".split()]
+8147""".split()]
